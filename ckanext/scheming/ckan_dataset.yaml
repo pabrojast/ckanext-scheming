@@ -70,7 +70,36 @@ dataset_fields:
   display_snippet: email.html
   display_email_name_field: maintainer
 
+- field_name: xmin
+  label: Xmin
+  form_placeholder: eg. 18
+  help_text: West
 
+- field_name: xmax
+  label: Xmax
+  form_placeholder: eg. 31
+  help_text: East
+
+- field_name: ymin
+  label: Ymin
+  form_placeholder: eg. -29
+  help_text: South
+
+- field_name: ymax
+  label: Ymax
+  form_placeholder: eg. -16
+  help_text: North
+  
+- field_name: ymax
+  label: Ymax
+  form_placeholder: eg. -16
+  help_text: North
+  
+- field_name: image
+  label: Image Featured UNESDOC
+  form_placeholder: eg. http://example.com/image.jpg
+  help_text: URL of the image associated with a Featured UNESDOC
+  
 resource_fields:
 
 - field_name: url
