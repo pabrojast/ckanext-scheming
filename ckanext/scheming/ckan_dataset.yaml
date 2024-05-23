@@ -90,11 +90,6 @@ dataset_fields:
   form_placeholder: eg. -16
   help_text: North
   
-- field_name: ymax
-  label: Ymax
-  form_placeholder: eg. -16
-  help_text: North
-  
 - field_name: image
   label: Image Featured UNESDOC
   form_placeholder: eg. http://example.com/image.jpg
