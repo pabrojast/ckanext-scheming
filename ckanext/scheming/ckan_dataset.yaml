@@ -94,6 +94,12 @@ dataset_fields:
   label: Image Featured UNESDOC
   form_placeholder: eg. http://example.com/image.jpg
   help_text: URL of the image associated with a Featured UNESDOC
+
+- field_name: spatial
+  label: valid GeoJSON geometry
+  form_placeholder: 
+  help_text: The easiest way to get your geometries indexed 
+  
   
 resource_fields:
 
