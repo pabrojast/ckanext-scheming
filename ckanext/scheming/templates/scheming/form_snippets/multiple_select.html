@@ -27,10 +27,15 @@
       name="{{ field.field_name }}"
       {{ form.attributes(dict(
         {"class": "form-control"}, **field.get('form_select_attrs', {}))) }}>
+    {#- After a validation error a single selected value comes back from the
+        form as a plain string, and `in` on a string is a substring test:
+        "13" also selected "1" and "3", and the next save stored all three. -#}
+    {%- set selected = data[field.field_name] or [] -%}
+    {%- if selected is string -%}{%- set selected = [selected] -%}{%- endif -%}
     {%- for val, label in choices -%}
       <option id="field-{{ field.field_name }}-{{ val }}"
           value="{{ val }}"
-          {{"selected " if val in data[field.field_name] }} />
+          {{"selected " if val in selected }} />
         {{ label }}
       </option>
     {%- endfor -%}
